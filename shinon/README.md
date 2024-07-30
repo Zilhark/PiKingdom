@@ -25,22 +25,22 @@ passwd username
 usermod -d /home/new_username -m new_username
 
 ### Reducing logs:
-wget https://github.com/azlux/log2ram/archive/master.tar.gz -O log2ram.tar.gz
-tar xf log2ram.tar.gz
-log2ram-master/
-sudo ./install.sh
-sudo reboot
-sudo nano /etc/log2ram.conf
-/#Purpose: Specifies that rsync should be used for syncing the log files from the RAM disk to the SD card.
-Impact:
-Positive:
-rsync is efficient in terms of synchronization because it only copies the changes (differences) rather than overwriting entire files. This reduces the amount of data written to the SD card, further minimizing wear.
-rsync can preserve file permissions, ownerships, and timestamps accurately, ensuring the integrity of log files.
-Negative:
-Using rsync might slightly increase CPU usage during synchronization, but this is usually minimal and offset by the benefits of reduced writes.
+wget https://github.com/azlux/log2ram/archive/master.tar.gz -O log2ram.tar.gz <br>
+tar xf log2ram.tar.gz <br>
+log2ram-master/<br>
+sudo ./install.sh<br>
+sudo reboot<br>
+sudo nano /etc/log2ram.conf<br>
+/#Purpose: Specifies that rsync should be used for syncing the log files from the RAM disk to the SD card.<br>
+Impact:<br>
+Positive:<br>
+rsync is efficient in terms of synchronization because it only copies the changes (differences) rather than overwriting entire files. This reduces the amount of data written to the SD card, further minimizing wear.<br>
+rsync can preserve file permissions, ownerships, and timestamps accurately, ensuring the integrity of log files.<br>
+Negative:<br>
+Using rsync might slightly increase CPU usage during synchronization, but this is usually minimal and offset by the benefits of reduced writes.<br>
 
-->USE_RSYNC=true
-sudo reboot
+->USE_RSYNC=true<br>
+sudo reboot<br>
 
 
 #### installing zsh
