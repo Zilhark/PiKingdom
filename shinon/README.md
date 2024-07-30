@@ -48,7 +48,68 @@ must be root:
 being root
 
 
-## Zsh
+### Zsh
+
+[config]
+~/.zshrc
+
 If wanting to rerun the installer
 autoload -Uz zsh-newuser-install
   zsh-newuser-install -f
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+#### Some toys 
+lsd<br>
+`sudo pacman -S lsd`<br>
+
+bat<br>
+sudo pacman -S bat<br>
+
+joblin<br>
+sudo pacman -S nodejs npm <br>
+npm install -g joplin <br>
+
+
+#### fzf
+fzf <br>
+sudo pacman -S fzf
+
+[fuzzy auto-compliation]
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+
+
+
+##### neovim
+neovim<br>
+sudo pacman -S neovim
+[config]
+~/.config/nvim/init.vim
+
+set number
+syntax on
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Plugin management with vim-plug
+call plug#begin('~/.vim/plugged')
+
+" List your plugins here
+Plug 'tpope/vim-sensible'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+call plug#end()
+
+
+##### alacritty <br>
+sudo pacman -S alacritty<br>
+[config]
+ ~/.config/alacritty/alacritty.yml
+
+
+
+
+
