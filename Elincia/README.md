@@ -28,6 +28,10 @@ to be transfered.
 
 The switc now has crypto.
 
+## Switch
+Rememebr that switches create VLAN for port or range of ports, and the devices connected to those swithces have their Ips. 
+So, devices have ips that default to the VLAN ip of the swithc, which depending on the config of the vlan, will do something with it.
+So, we set up FastEthernet0/1-24 to vlan 1, then default-gatway vlan to <ip-addr>. So, devices connected to those ports will send to default-gatway <ip-add>
 #### Setting up the swithch.
 
 Commands for setting up the ethernets:
