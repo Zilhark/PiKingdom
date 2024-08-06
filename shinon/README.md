@@ -58,6 +58,18 @@ autoload -Uz zsh-newuser-install
   zsh-newuser-install -f
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+the zsh file strucutre:
+~/$HOME/.zshrc
+~/.config/zsh/<br>
+├── aliases.zsh<br>
+├── environment.zsh<br>
+├── functions.zsh<br>
+├── plugins/<br>
+│   ├── zsh-autosuggestions<br>
+│   ├── zsh-completions<br>
+│   ├── zsh-syntax-highlighting<br>
+└── zshrc
+
 
 #### Some toys 
 lsd<br>
