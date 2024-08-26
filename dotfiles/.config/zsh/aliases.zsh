@@ -1,5 +1,5 @@
 # Common aliases
-alias ll='ls -lah'
+#alias ll='ls -lah'
 alias gs='git status'
 alias ga='git add'
 alias gc='git commit'
@@ -17,3 +17,5 @@ if [[ -x "$(command -v exa)" ]]; then
   alias ll='exa -l --color=auto --icons'
   alias la='exa -la --color=auto --icons'
 fi
+
+alias leo='ssh pi@192.168.1.163'

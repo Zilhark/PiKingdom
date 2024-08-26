@@ -20,8 +20,8 @@ source $ZSH_CUSTOM/functions.zsh
 # Load plugins
 source $ZSH_CUSTOM/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-source $ZSH_CUSTOM/plugins/fzf/shell/completion.zsh
-source $ZSH_CUSTOM/plugins/fzf/shell/key-bindings.zsh
+source ~/.fzf/shell/completion.zsh
+source ~/.fzf/shell/key-bindings.zsh
 
 # Load theme (example with powerlevel10k)
 source $ZSH_CUSTOM/plugins/powerlevel10k/powerlevel10k.zsh-theme
@@ -70,5 +70,5 @@ setopt interactive_comments # Enable comments in interactive shells
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source $ZSH_CUSTOM/plugins/zsh-syntax-highlightin/zsh-syntax-highlighting.zsh
-
+source $ZSH_CUSTOM/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+bindkey -v

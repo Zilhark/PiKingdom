@@ -1,9 +1,6 @@
-require('plugins')
-require('settings')
---require('keybinding')
-require('lsp')
-require('remap')
---require('harpoon')
-require('telescop')
-require('nvimtree')
+
+require('user.settings')
+require('user.keybindings')
+require('user.autocmds')
+require('user.lazy-setup')
 
